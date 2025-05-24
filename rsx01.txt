@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>rsx01</title>
+</head>
+<body>
+
+<h1>ファイルを表示</h1>
+
+<!-- AR Quick Lookで表示するボタン付きリンク -->
+<a rel="ar" href="rsx01.usdz">
+  <img src="preview.png" alt="3Dモデルのプレビュー" width="300">
+</a>
+
+<!-- 説明 -->
+<p>上の画像をタップすると、ARモードでUSDZモデルが開きます（iOS Safariのみ対応）。</p>
+
+</body>
+</html>
