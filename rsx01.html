@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>rsx01</title>
+<meta charset="UTF-8">
+<title>RSX Viewer</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+body { margin: 0; }
+model-viewer {
+width: 100vw;
+height: 100vh;
+}
+</style>
 </head>
 <body>
-
-<h1>ファイルを表示</h1>
-
-<!-- AR Quick Lookで表示するボタン付きリンク -->
-<a rel="ar" href="rsx01.usdz">
-  <img src="preview.png" alt="3Dモデルのプレビュー" width="300">
-</a>
-
-<!-- 説明 -->
-<p>上の画像をタップすると、ARモードでUSDZモデルが開きます（iOS Safariのみ対応）。</p>
-
+<model-viewer
+src="rsx01.usdz"
+alt="3D model"
+ar
+ar-modes="webxr quick-look"
+auto-rotate
+camera-controls
+ios-src="rsx01.usdz"
+></model-viewer>
 </body>
 </html>
